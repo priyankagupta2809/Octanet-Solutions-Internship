@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Project Tasks</h1>
+        <form id="taskForm" class="task-form">
+            <div class="form-field">
+                <input type="text" id="taskName" placeholder="Task Name" required>
+            </div>
+            <div class="form-field">
+                <select id="taskCategory">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <input type="date" id="taskDeadline" required>
+            </div>
+            <div class="form-field">
+                <select id="taskPriority">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <input type="text" id="taskLabel" placeholder="Label">
+            </div>
+            <button type="submit">Add Task</button>
+        </form>
+        <div id="tasks"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
